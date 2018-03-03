@@ -1,0 +1,15 @@
+
+public class Consumer extends Thread {
+    @Override
+    public void run()
+    {
+        try
+        {
+            pc.consume();
+        }
+        catch(InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+    }
+}
